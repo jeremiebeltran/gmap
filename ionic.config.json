@@ -2,5 +2,8 @@
   "name": "gmap",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {},
+  "proxies": [
+    {"path":"/usgs","proxyUrl":"https://earthquake.usgs.gov/fdsnws/event"}
+  ]
 }

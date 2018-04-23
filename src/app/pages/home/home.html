@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>GeoJSON visualization page</h2>
+
+  <form #myForm="ngForm" novalidate>
+    <my-date-range-picker name="mydaterange" placeholder="Select date range" [options]="myDateRangePickerOptions"
+                     (dateRangeChanged)="onDateRangeChanged($event)" required></my-date-range-picker>
+</form>
+<button ion-button class="yes " (click)="searchData()">Submit</button>
+</ion-content>
