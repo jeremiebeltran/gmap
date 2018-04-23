@@ -14,4 +14,11 @@
     Take a look at the <code>src/pages/</code> directory to add or change tabs,
     update any existing page or create new pages.
   </p>
+
+  <form #myForm="ngForm" novalidate>
+    <my-date-range-picker name="mydaterange" placeholder="Select date range" [options]="myDateRangePickerOptions"
+                    [(ngModel)]="model" (dateRangeChanged)="onDateRangeChanged($event)" required></my-date-range-picker>
+</form>
+
+
 </ion-content>
